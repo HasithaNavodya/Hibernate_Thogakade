@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancPaneCustomer" prefHeight="635.0" prefWidth="762.0" style="-fx-background-color: #00FFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.crud_using_hibernate.controller.CustomerController">
+   <children>
+      <Label layoutX="235.0" layoutY="41.0" text="Customer Management">
+         <font>
+            <Font name="Times New Roman Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="33.0" layoutY="181.0" prefHeight="25.0" prefWidth="65.0" text="ID :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="137.0" layoutY="181.0" onAction="#txtIdOnAction" prefHeight="26.0" prefWidth="179.0" promptText="Id" />
+      <Label layoutX="35.0" layoutY="246.0" text="Address :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="137.0" layoutY="246.0" prefHeight="26.0" prefWidth="179.0" promptText="Address" />
+      <Label layoutX="476.0" layoutY="181.0" text="Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="549.0" layoutY="180.0" prefHeight="26.0" prefWidth="179.0" promptText="Name" />
+      <Label layoutX="476.0" layoutY="247.0" text="Salary :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSalary" layoutX="549.0" layoutY="246.0" prefHeight="26.0" prefWidth="179.0" promptText="Salary" />
+      <Button fx:id="btnDelete" layoutX="476.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #87CEFA;" text="Delete" />
+      <Button fx:id="btnUpdate" layoutX="566.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #D2691E;" text="Update" />
+      <Button fx:id="btnSave" layoutX="651.0" layoutY="551.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: yellow;" text="Save" />
+      <JFXButton fx:id="btnHome" alignment="CENTER" layoutX="70.0" layoutY="103.0" onAction="#btnHomeOnAction" text="Button">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tViewCustomer" layoutX="35.0" layoutY="311.0" onMouseClicked="#tblOnMouseClicked" prefHeight="203.0" prefWidth="693.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="94.39998626708984" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="179.20001220703125" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="233.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="183.0" text="Salary" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

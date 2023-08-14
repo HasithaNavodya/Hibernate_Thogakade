@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancPaneHome" prefHeight="443.0" prefWidth="664.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.crud_using_hibernate.controller.HomeController">
+   <children>
+      <JFXButton fx:id="btnItems" layoutX="393.0" layoutY="222.0" onAction="#btnItemsOnAction" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #20B2AA; -fx-background-radius: 3; -fx-padding: 2 10 2 10;" text="Items" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCustomer" layoutX="122.0" layoutY="222.0" onAction="#btnCustomerOnAction" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #20B2AA; -fx-background-radius: 3; -fx-padding: 2 10 2 10;" text="Customers" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton disable="true" layoutX="393.0" layoutY="303.0" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #20B2AA; -fx-background-radius: 3; -fx-padding: 2 10 2 10;" text="Order Deatils" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOrders" layoutX="122.0" layoutY="303.0" onAction="#btnOrdersOnAction" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #20B2AA; -fx-background-radius: 3; -fx-padding: 2 10 2 10;" text="Orders" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TextField layoutX="194.0" layoutY="37.0" prefHeight="75.0" prefWidth="277.0" style="-fx-background-color: #3CB371;" text="THOGAKADE">
+         <font>
+            <Font name="Times New Roman Bold" size="35.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
